@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## StackBlogger- A blog by Programmer for Programmers
+
+[StackBlogger](https://stackblogger.com/) is a blog built to provide programming tips and tricks to developers. The goal of the author is to provide easy and standard solutions to questions asked around the world. We are continuously improving the blog and updating the posts with time to time to make sure readers get the latest solutions as per the latest technology / code.
 
 You can use the [editor on GitHub](https://github.com/stackblogger/stackblogger.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
