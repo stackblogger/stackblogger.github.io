@@ -1,39 +1,19 @@
-## StackBlogger- A blog by Programmer for Programmers
+## StackBlogger- Easy Tips and Tricks
 
 [StackBlogger](https://stackblogger.com/) is a blog built to provide programming tips and tricks to developers. The goal of the author is to provide easy and standard solutions to questions asked around the world. We are continuously improving the blog and updating the posts with time to time to make sure readers get the latest solutions as per the latest technology / code.
 
-You can use the [editor on GitHub](https://github.com/stackblogger/stackblogger.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## Founder and Author
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am Jameer Khan, founder and author of StackBlogger. I write easy tips and tricks about programming. It includes tutorials, how-to guides and solutions to programming problems.
 
-### Markdown
+## Social Bookmarking and Backlinks
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I run a website which provides social bookmarking and backlink creation for any of the blog / website. You can use the tool to generate good backlinks to your site. Here is the link: [BookMyMark](https://bookmymark.com)
 
-```markdown
-Syntax highlighted code block
+## Reach Out to Me
 
-# Header 1
-## Header 2
-### Header 3
+Have a query for me? You can reach out to me by any of the following ways:
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stackblogger/stackblogger.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- **Email:** jimcute8879@gmail.com
+- **Skype:** jameer.khan19
+- **Website:** [StackBlogger](https://stackblogger.com)
