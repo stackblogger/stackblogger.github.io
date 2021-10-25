@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="6llk_GJd77y3tMc9w7eI0ATSboyzCsWvabXTDjHEnDc" />
+	<meta name="description"
+		content="Google provides various free charts to use in applications. They are simple to use and powerful tool to plot diagrams with data. In this article we will talk about how to use some of the Google Charts in Angular application.">
+	<meta name="author" content="Jameer Khan">
+	<link rel="icon" href="https://stackblogger.com/wp-content/uploads/2021/09/Webp.net-resizeimage.png">
+	<title>5 Best Google Charts to Use in Angular - StackBlogger</title>
+	<!-- Bootstrap core CSS -->
+	<link href="https://d3e46g6bezdicz.cloudfront.net/stackblogger.github.io/bootstrap.min.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="https://d3e46g6bezdicz.cloudfront.net/stackblogger.github.io/mediumish.css" rel="stylesheet">
+	<style>
+		figcaption {
+			font-size: 13px;
+			white-space: pre-wrap;
+			min-width: 1px;
+			text-align: center;
+			margin-top: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Begin Nav
+================================================== -->
+	<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+			data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container">
+			<!-- Begin Logo -->
+			<a class="navbar-brand" href="/">
+				SB
+			</a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" target="_blank" href="https://stackblogger.com/">All Posts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" target="_blank"
+							href="https://stackblogger.com/author/blogforcodes/">Author</a>
+					</li>
+				</ul>
+				<form action="https://stackblogger.com/" class="form-inline my-2 my-lg-0">
+					<input name="s" class="form-control mr-sm-2" type="text" placeholder="Search">
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- End Nav
+================================================== -->
+
+	<!-- Begin Article
+================================================== -->
+	<div class="container">
+		<div class="row">
+
+			<!-- Begin Fixed Left Share -->
+			<div class="col-md-1 col-xs-12">
+
+			</div>
+			<!-- End Fixed Left Share -->
+
+			<!-- Begin Post -->
+			<div class="col-md-10 col-md-offset-2 col-xs-12">
+				<div class="mainheading">
+
+					<!-- End Top Menta -->
+
+					<h1 class="posttitle">5 Best Google Charts to Use in Angular (2021)</h1>
+
+				</div>
+
+				<!-- Begin Featured Image -->
+				<img class="featured-image img-fluid"
+					src="https://stackblogger.com/wp-content/uploads/2021/10/5-best-google-charts-for-angular-min.png"
+					alt="5 Best Google Charts to Use in Angular">
+				<!-- End Featured Image -->
+
+				<!-- Begin Post Content -->
+				<div class="article-post">
+					<p>
+						The article is originally published at: <a
+							href="https://stackblogger.com/5-best-google-charts-for-angular/">5 Best Google Charts for
+							Angular</a>
+					</p>
+					<p>
+						A chart is a graphical representation of information in the form of diagram etc. Google provides
+						various free charts to use in applications. They are simple to use and powerful tool to plot
+						diagrams with data. In this article we will talk about how to use some of the Google Charts in
+						Angular application.
+					</p>
+					<hr>
+					<h2 id="angular-google-charts">Angular Google Charts</h2>
+					<p>
+						<a href="https://github.com/FERNman/angular-google-charts" target="_blank">Angular Google
+							Chart</a> is a wrapper of Google Charts project built in Angular. It is a package
+						that can be used in the Angular application by installing it using npm.
+					</p>
+					<h2 id="5-best-google-charts-to-use-in-angular">5 Best Google Charts to use in Angular</h2>
+					<ol>
+						<li><strong>Line Chart</strong>– a chart in which information is displayed in the form of data
+							series</li>
+						<li><strong>Pie Chart</strong>– a circle chart divided into parts to show the information</li>
+						<li><strong>Histogram Chart</strong>– it is essentially a pie chart with an area of centre cut
+							out</li>
+						<li><strong>Gauge Chart</strong>– also called a dial chart, uses needles to show the information
+						</li>
+						<li><strong>Combo Chart</strong>– combination of two or more lines or columns to plot
+							information</li>
+					</ol>
+					<p>Let’s implement each charts in Angular application.</p>
+					<ul>
+						<li><a href="#install-google-charts">Install Google Charts in Angular</a></li>
+						<li><a href="#import-googlechartsmodule">Import GoogleChartsModule</a>
+							<ol>
+								<li><a href="#line-chart">Line Chart</a></li>
+								<li><a href="#pie-chart">Pie Chart</a></li>
+								<li><a href="#Histogram-Chart">Histogram Chart</a></li>
+								<li><a href="#Gauge-Chart">Gauge Chart</a></li>
+								<li><a href="#Combo-Chart">Combo Chart</a></li>
+							</ol>
+						</li>
+					</ul>
+					<h2 id="install-google-charts">Install Google Charts in Angular</h2>
+					<p>The first thing is to install the google charts library in Angular application so that you can
+						plot various charts.</p>
+					<p><strong>Note:</strong> I am using Angular 12 for this example.</p>
+					<p>Run the command below to install the angular google charts package:</p>
+					<blockquote>
+						npm install angular-google-charts
+					</blockquote>
+					<figure class="wp-block-image size-full"><img loading="lazy" width="888" height="500"
+							src="https://stackblogger.com/wp-content/uploads/2021/10/google-chart-min.png"
+							alt="Angular Google Chart install output" class="wp-image-1601"
+							srcset="https://stackblogger.com/wp-content/uploads/2021/10/google-chart-min.png 888w, https://stackblogger.com/wp-content/uploads/2021/10/google-chart-min-300x169.png 300w, https://stackblogger.com/wp-content/uploads/2021/10/google-chart-min-768x432.png 768w, https://stackblogger.com/wp-content/uploads/2021/10/google-chart-min-150x84.png 150w"
+							sizes="(max-width: 888px) 100vw, 888px">
+						<figcaption>Angular Google Chart install output</figcaption>
+					</figure>
+					<h2 id="import-googlechartsmodule">Import <code>GoogleChartsModule</code></h2>
+					<p>The next thing is to import <code>GoogleChartsModule</code> module in <code>app.module.ts</code>
+						file.</p>
+					<blockquote>
+						import { GoogleChartsModule } from 'angular-google-charts';
+						<br>
+						@NgModule({
+						<br>
+						...
+						<br>
+						imports: [
+						<br>
+						...
+						<br>
+						GoogleChartsModule,
+						<br>
+						...
+						<br>
+						],
+						<br>
+						...
+						<br>
+						})
+						<br>
+						export class AppModule {}
+					</blockquote>
+					<h2>Create Service file</h2>
+					<p><code>app.service.ts</code></p>
+					<code>
+						import { Injectable } from "@angular/core";
+						import { HttpClient } from '@angular/common/http';
+						import { Observable } from "rxjs";
+						
+						@Injectable()
+						export class AppService {
+							constructor(private httpClient: HttpClient) {
+							}
+						
+							getChartData(): Observable<Array<Array<string | number>>> {
+								return this.httpClient.get<Array<Array<string | number>>>(`http://localhost:3000/chartData`);
+							}
+						}
+					</code>
+
+					<p>I am using <a href="https://www.npmjs.com/package/json-server" target="_blank"
+							rel="noreferrer noopener">json-server</a> to create a fake JSON api.</p>
+					<p><code>db.json</code> file</p>
+					<code>
+							{
+								"chartData": [
+									[
+										"London",
+										8136000
+									],
+									[
+										"New York",
+										8538000
+									],
+									[
+										"Paris",
+										2244000
+									],
+									[
+										"Berlin",
+										3470000
+									],
+									[
+										"Kairo",
+										19500000
+									]
+								]
+							}
+							 
+						</code>
+					<p>Install and run the json server using command-</p>
+					<blockquote>
+						npm install -g json-server
+					</blockquote>
+					<blockquote>
+						json-server --watch db.json
+					</blockquote>
+
+					<figure class="wp-block-image size-full"><img loading="lazy" width="818" height="367"
+							src="https://stackblogger.com/wp-content/uploads/2021/10/json-server-fake-api-min.png"
+							alt="JSON Server Fake API" class="wp-image-1626"
+							srcset="https://stackblogger.com/wp-content/uploads/2021/10/json-server-fake-api-min.png 818w, https://stackblogger.com/wp-content/uploads/2021/10/json-server-fake-api-min-300x135.png 300w, https://stackblogger.com/wp-content/uploads/2021/10/json-server-fake-api-min-768x345.png 768w, https://stackblogger.com/wp-content/uploads/2021/10/json-server-fake-api-min-150x67.png 150w"
+							sizes="(max-width: 818px) 100vw, 818px">
+						<figcaption>JSON Server Fake API</figcaption>
+					</figure>
+
+					<hr class="wp-block-separator">
+					<p>Now we are ready to plot charts. Let’s plot charts one by one.</p>
+					<h2 id="line-chart">Line Chart</h2>
+					<p>It’s time to plot the chart on page. I have consumed the fake json api (you can use your real api
+						to plot).</p>
+					<code>
+							import { Component, OnInit } from '@angular/core';
+							import { ChartType } from "angular-google-charts";
+							import { AppService } from './app.service';
+							
+							
+							@Component({
+							selector: 'app-root',
+							templateUrl: './app.component.html',
+							styleUrls: ['./app.component.scss']
+							})
+							export class AppComponent implements OnInit {
+							title = 'google-charts';
+							myType = ChartType.LineChart;
+							chartData: Array<Array<string | number>> = [];
+							
+							constructor(private appService: AppService) {
+							}
+							
+							ngOnInit() {
+								this.getChartData();
+							}
+							
+							private getChartData() {
+								this.appService.getChartData().subscribe(data => {
+								this.chartData = data;
+								})
+							}
+							}
+						</code>
+					<h5>Add Template Code</h5>
+					<p>Add below code in your template file. Find the <code>Type</code> values from here: <a
+							href="https://github.com/FERNman/angular-google-charts/blob/master/libs/angular-google-charts/src/lib/types/chart-type.ts"
+							target="_blank" rel="noreferrer noopener">Chart Types</a></p>
+					<figure class="wp-block-image size-full"><img loading="lazy" width="562" height="245"
+							src="https://stackblogger.com/wp-content/uploads/2021/10/line-chart-output-min.png"
+							alt="Google Line Chart Output" class="wp-image-1614"
+							srcset="https://stackblogger.com/wp-content/uploads/2021/10/line-chart-output-min.png 562w, https://stackblogger.com/wp-content/uploads/2021/10/line-chart-output-min-300x131.png 300w, https://stackblogger.com/wp-content/uploads/2021/10/line-chart-output-min-150x65.png 150w"
+							sizes="(max-width: 562px) 100vw, 562px">
+						<figcaption>Google Line Chart Output</figcaption>
+					</figure>
+					<h2>
+						Gauge Chart
+					</h2>
+					<figure class="wp-block-image size-full"><img loading="lazy" width="555" height="252"
+							src="https://stackblogger.com/wp-content/uploads/2021/10/image-5.png"
+							alt="Gauge Google Chart" class="wp-image-1645"
+							srcset="https://stackblogger.com/wp-content/uploads/2021/10/image-5.png 555w, https://stackblogger.com/wp-content/uploads/2021/10/image-5-300x136.png 300w, https://stackblogger.com/wp-content/uploads/2021/10/image-5-150x68.png 150w"
+							sizes="(max-width: 555px) 100vw, 555px">
+						<figcaption>Gauge Google Chart</figcaption>
+					</figure>
+					<p>
+						The article is originally published at: <a
+							href="https://stackblogger.com/5-best-google-charts-for-angular/">5 Best Google Charts for
+							Angular</a>
+					</p>
+				</div>
+				<!-- End Post Content -->
+
+
+			</div>
+			<!-- End Post -->
+
+		</div>
+		<!-- End Article
+================================================== -->
+
+		<div class="hideshare"></div>
+
+		<!-- Begin Related
+================================================== -->
+		<!-- <div class="graybg">
+		<div class="container">
+			<div class="row listrecent listrelated">
+
+				<div class="col-md-4">
+					<div class="card">
+						<a href="post.html">
+							<img class="img-fluid img-thumb" src="assets/img/demopic/9.jpg" alt="">
+						</a>
+						<div class="card-block">
+							<h2 class="card-title"><a href="post.html">Best recreational places to visit on a
+									holiday</a></h2>
+							<div class="metafooter">
+								<div class="wrapfooter">
+									<span class="meta-footer-thumb">
+										<a href="author.html"><img class="author-thumb"
+												src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x"
+												alt="Sal"></a>
+									</span>
+									<span class="author-meta">
+										<span class="post-name"><a href="author.html">Sal</a></span><br />
+										<span class="post-date">22 July 2017</span><span class="dot"></span><span
+											class="post-read">6 min read</span>
+									</span>
+									<span class="post-read-more"><a href="post.html" title="Read Story"><svg
+												class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
+												<path
+													d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z"
+													fill-rule="evenodd"></path>
+											</svg></a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<a href="post.html">
+							<img class="img-fluid img-thumb" src="assets/img/demopic/8.jpg" alt="">
+						</a>
+						<div class="card-block">
+							<h2 class="card-title"><a href="post.html">How travelling can change your life</a></h2>
+							<div class="metafooter">
+								<div class="wrapfooter">
+									<span class="meta-footer-thumb">
+										<a href="author.html"><img class="author-thumb"
+												src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x"
+												alt="Sal"></a>
+									</span>
+									<span class="author-meta">
+										<span class="post-name"><a href="author.html">Sal</a></span><br />
+										<span class="post-date">22 July 2017</span><span class="dot"></span><span
+											class="post-read">6 min read</span>
+									</span>
+									<span class="post-read-more"><a href="post.html" title="Read Story"><svg
+												class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
+												<path
+													d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z"
+													fill-rule="evenodd"></path>
+											</svg></a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<a href="post.html">
+							<img class="img-fluid img-thumb" src="assets/img/demopic/7.jpg" alt="">
+						</a>
+						<div class="card-block">
+							<h2 class="card-title"><a href="post.html">Little red dress and a perfect summer</a></h2>
+							<div class="metafooter">
+								<div class="wrapfooter">
+									<span class="meta-footer-thumb">
+										<a href="author.html"><img class="author-thumb"
+												src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x"
+												alt="Sal"></a>
+									</span>
+									<span class="author-meta">
+										<span class="post-name"><a href="author.html">Sal</a></span><br />
+										<span class="post-date">22 July 2017</span><span class="dot"></span><span
+											class="post-read">6 min read</span>
+									</span>
+									<span class="post-read-more"><a href="post.html" title="Read Story"><svg
+												class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
+												<path
+													d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z"
+													fill-rule="evenodd"></path>
+											</svg></a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+		<!-- End Related Posts
+================================================== -->
+
+		<!-- Begin AlertBar
+================================================== -->
+		<!-- <div class="alertbar">
+		<div class="container text-center">
+			<img src="assets/img/logo.png" alt=""> &nbsp; Never miss a <b>story</b> from us, get weekly updates in your
+			inbox. <a href="#" class="btn subscribe">Get Updates</a>
+		</div>
+	</div> -->
+		<!-- End AlertBar
+================================================== -->
+
+		<!-- Begin Footer
+================================================== -->
+		<div class="footer">
+			<p class="pull-left">
+				Copyright &copy; 2021 StackBlogger
+			</p>
+			<p class="pull-right">
+				Powered by <a target="_blank" href="https://stackblogger.com">StackBlogger</a>
+			</p>
+			<div class="clearfix">
+			</div>
+		</div>
+		<!-- End Footer
+================================================== -->
+
+	</div>
+
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://d3e46g6bezdicz.cloudfront.net/stackblogger.github.io/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+		integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+		crossorigin="anonymous"></script>
+	<script src="https://d3e46g6bezdicz.cloudfront.net/stackblogger.github.io/bootstrap.min.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118171086-5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-118171086-5');
+	</script>
+</body>
+
+</html>
