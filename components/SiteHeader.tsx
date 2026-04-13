@@ -8,23 +8,17 @@ export function SiteHeader() {
         <OpenSourceLogo href="/" />
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted">
           <Link href="/#projects" className="transition-colors hover:text-accent">
-            Projects
-          </Link>
-          <Link
-            href="/#principles"
-            className="transition-colors hover:text-accent"
-          >
-            Principles
+            projects
           </Link>
           <Link href="/#about" className="transition-colors hover:text-accent">
-            About
+            about
           </Link>
           <a
             href="https://me.stackblogger.com/"
             className="transition-colors hover:text-accent"
             rel="noopener noreferrer"
           >
-            Portfolio
+            portfolio
           </a>
         </nav>
       </div>

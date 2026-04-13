@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s · opensource",
   },
   description:
-    "Open source tools and libraries from Stackblogger: small surface area, fast defaults, and docs you can trust.",
+    "open source tools and libraries from stackblogger: small surface area, fast defaults, and docs you can trust.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     siteName: "opensource",
     title: "opensource · stackblogger",
     description:
-      "Open source tools and libraries from Stackblogger: small surface area, fast defaults, and docs you can trust.",
+      "open source tools and libraries from stackblogger: small surface area, fast defaults, and docs you can trust.",
   },
   twitter: {
     card: "summary_large_image",
     title: "opensource · stackblogger",
     description:
-      "Open source tools and libraries from Stackblogger: small surface area, fast defaults, and docs you can trust.",
+      "open source tools and libraries from stackblogger: small surface area, fast defaults, and docs you can trust.",
   },
   robots: { index: true, follow: true },
 };

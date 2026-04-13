@@ -11,22 +11,20 @@ export default function HomePage() {
           id="hero-heading"
           className="text-sm font-medium tracking-wide text-accent"
         >
-          Ship in public
+          helping hand
         </p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Tools and libraries with boring internals and sharp edges where it
-          matters.
+          opensource projects by stackblogger
         </h1>
         <p className="mt-5 max-w-4xl text-base leading-relaxed text-muted">
-          This site lists open source work maintained under the opensource line
-          by Stackblogger. Everything here is built to stay small, fast, and
-          easy to self-host or vendor into your own stack.
+          here you will find the opensource projects that make the developers life easier.
+          if you find any of them useful, please spread the word.
         </p>
         <ul className="mt-8 grid gap-3 sm:grid-cols-3">
           {[
-            "Static export friendly",
-            "Mobile-first layouts",
-            "SEO metadata baked in",
+            "lightweight",
+            "easy to use",
+            "open to contribution",
           ].map((item) => (
             <li
               key={item}
@@ -47,15 +45,14 @@ export default function HomePage() {
           <div>
             <h2
               id="projects-heading"
-              className="text-sm font-semibold uppercase tracking-wider text-muted"
+              className="text-sm font-semibold tracking-wider text-muted"
             >
-              Projects
+              projects
             </h2>
             <p className="mt-2 text-lg font-medium text-foreground">
-              Pick a project for full context, stack, and install notes.
+              open a project to see the complete detail about it
             </p>
           </div>
-          <p className="text-sm text-muted">Single-word URLs for sharing.</p>
         </div>
 
         <ul className="mt-10 flex flex-col gap-4">
@@ -88,7 +85,7 @@ export default function HomePage() {
                       {tech}
                     </span>
                   ))}
-                  <span className="rounded-full border border-accent/30 bg-accent/10 px-2.5 py-0.5 text-xs capitalize text-accent">
+                  <span className="rounded-full border border-accent/30 bg-accent/10 px-2.5 py-0.5 text-xs text-accent">
                     {p.status}
                   </span>
                 </div>
@@ -99,70 +96,29 @@ export default function HomePage() {
       </section>
 
       <section
-        id="principles"
-        className="scroll-mt-24 border-b border-border py-14"
-        aria-labelledby="principles-heading"
-      >
-        <h2
-          id="principles-heading"
-          className="text-sm font-semibold uppercase tracking-wider text-muted"
-        >
-          Principles
-        </h2>
-        <p className="mt-2 max-w-4xl text-base text-muted">
-          Non-negotiables for anything that ships under this banner.
-        </p>
-        <dl className="mt-10 grid gap-6 sm:grid-cols-2">
-          {[
-            {
-              term: "Small API",
-              body: "Prefer a narrow surface with escape hatches over a kitchen-sink SDK.",
-            },
-            {
-              term: "Docs with the binary",
-              body: "If you cannot understand it from the README and --help, it is not done.",
-            },
-            {
-              term: "Perf is a feature",
-              body: "Cold start, bundle size, and memory are tracked like correctness bugs.",
-            },
-            {
-              term: "OSS hygiene",
-              body: "Clear license, changelog discipline, and predictable release tags.",
-            },
-          ].map((row) => (
-            <div key={row.term} className="rounded-xl border border-border bg-card p-5">
-              <dt className="text-base font-semibold text-foreground">{row.term}</dt>
-              <dd className="mt-2 text-sm leading-relaxed text-muted">{row.body}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
-
-      <section
         id="about"
         className="scroll-mt-24 py-14"
         aria-labelledby="about-heading"
       >
         <h2
           id="about-heading"
-          className="text-sm font-semibold uppercase tracking-wider text-muted"
+          className="text-sm font-semibold tracking-wider text-muted"
         >
-          About this site
+          about this site
         </h2>
         <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
           <p>
-            opensource is the home for Stackblogger experiments that graduated
-            from notes to repos: CLIs, libraries, and tiny services meant to
+            opensource is the home for stackblogger experiments that graduated
+            from notes to repos: clis, libraries, and tiny services meant to
             be forked or vendored without ceremony.
           </p>
           <p>
-            Pages are statically generated so they stay fast on modest hosting.
-            If you want to collaborate, start from the project detail page for
+            pages are statically generated so they stay fast on modest hosting.
+            if you want to collaborate, start from the project detail page for
             contribution expectations and license terms.
           </p>
           <p>
-            Resume, career snapshot, and broader work live on{" "}
+            resume, career snapshot, and broader work live on{" "}
             <a
               href="https://me.stackblogger.com/"
               className="text-accent underline-offset-4 hover:underline"

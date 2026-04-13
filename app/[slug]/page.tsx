@@ -21,17 +21,17 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
-  if (!project) return { title: "Not found" };
+  if (!project) return { title: "not found" };
   return {
-    title: project.name,
-    description: project.description,
+    title: project.name.toLowerCase(),
+    description: project.description.toLowerCase(),
     openGraph: {
-      title: project.name,
-      description: project.description,
+      title: project.name.toLowerCase(),
+      description: project.description.toLowerCase(),
     },
     twitter: {
-      title: project.name,
-      description: project.description,
+      title: project.name.toLowerCase(),
+      description: project.description.toLowerCase(),
     },
   };
 }
@@ -51,14 +51,14 @@ export default async function ProjectPage({ params }: Props) {
         href="/"
         className="text-sm text-muted transition-colors hover:text-accent"
       >
-        ← All projects
+        ← all projects
       </Link>
 
       <header className="mt-8 border-b border-border pb-10">
         <div className="flex flex-wrap items-center gap-3">
           <span className="font-mono text-xs text-muted">/{project.slug}/</span>
           <span
-            className={`rounded-full border px-2.5 py-0.5 text-xs font-medium capitalize ${statusClass}`}
+            className={`rounded-full border px-2.5 py-0.5 text-xs font-medium ${statusClass}`}
           >
             {project.status}
           </span>
@@ -73,9 +73,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="overview">
           <h2
             id="overview"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Overview
+            overview
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/90">
             {project.description}
@@ -85,9 +85,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="why">
           <h2
             id="why"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Why it exists
+            why it exists
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/90">
             {project.motivation}
@@ -97,9 +97,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="features">
           <h2
             id="features"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Features
+            features
           </h2>
           <ul className="mt-4 list-inside list-disc space-y-2 text-base leading-relaxed text-foreground/90 marker:text-accent">
             {project.features.map((f) => (
@@ -111,9 +111,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="design">
           <h2
             id="design"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Design notes
+            design notes
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/90">
             {project.designNotes}
@@ -123,9 +123,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="quickstart">
           <h2
             id="quickstart"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Quick start
+            quick start
           </h2>
           <pre className="mt-4 overflow-x-auto rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-foreground/90">
             <code>{project.quickstart}</code>
@@ -135,9 +135,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="stack">
           <h2
             id="stack"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Stack
+            stack
           </h2>
           <ul className="mt-4 flex flex-wrap gap-2">
             {project.stack.map((tech) => (
@@ -154,9 +154,9 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="links">
           <h2
             id="links"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Links
+            links
           </h2>
           <ul className="mt-4 flex flex-col gap-2">
             {project.links.map((link) => (
@@ -177,21 +177,21 @@ export default async function ProjectPage({ params }: Props) {
         <section aria-labelledby="license">
           <h2
             id="license"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            License
+            license
           </h2>
           <p className="mt-4 text-base text-foreground/90">
-            Distributed under {project.license}.
+            distributed under {project.license}.
           </p>
         </section>
 
         <section aria-labelledby="contributing">
           <h2
             id="contributing"
-            className="text-sm font-semibold uppercase tracking-wider text-muted"
+            className="text-sm font-semibold tracking-wider text-muted"
           >
-            Contributing
+            contributing
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/90">
             {project.contributing}
