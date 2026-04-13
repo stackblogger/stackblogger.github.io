@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --background: #08090b;
+  --foreground: #f4f4f5;
+  --muted: #a1a1aa;
+  --card: #111113;
+  --accent: #30cf8c;
+  --border: #27272a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --font-sans: var(--font-jetbrains-mono), ui-monospace, "Cascadia Code",
+    "SF Mono", Menlo, Monaco, Consolas, monospace;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, Menlo, Monaco, Consolas,
+    monospace;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: -0.015em;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(
+      900px circle at 12% -8%,
+      rgba(48, 207, 140, 0.2),
+      transparent 52%
+    ),
+    radial-gradient(
+      720px circle at 92% 8%,
+      rgba(124, 58, 237, 0.16),
+      transparent 50%
+    ),
+    radial-gradient(
+      640px circle at 4% 92%,
+      rgba(14, 165, 233, 0.12),
+      transparent 48%
+    ),
+    linear-gradient(
+      168deg,
+      #050506 0%,
+      #0a0b0e 38%,
+      #0b0c0f 62%,
+      #080a11 100%
+    );
+  background-attachment: scroll;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+
+.logo-opensource {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 0.65rem 0.85rem 0.75rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    145deg,
+    rgba(48, 207, 140, 0.08) 0%,
+    transparent 55%
+  );
+  box-shadow: 0 0 0 1px rgba(48, 207, 140, 0.12) inset;
+  position: relative;
+}
+
+.logo-opensource::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  bottom: 0.55rem;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    var(--accent) 0%,
+    rgba(48, 207, 140, 0.35) 100%
+  );
+}
+
+.logo-opensource__word {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: lowercase;
+  background: linear-gradient(
+    90deg,
+    #fafafa 0%,
+    #fafafa 42%,
+    var(--accent) 42%,
+    #6ee7b7 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-left: 0.15rem;
+}
+
+.logo-opensource__tagline {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: lowercase;
+  color: var(--muted);
+  padding-left: 0.15rem;
+}
+
+.logo-opensource__tagline strong {
+  color: var(--foreground);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
