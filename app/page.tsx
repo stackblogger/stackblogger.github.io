@@ -115,7 +115,7 @@ export default function HomePage() {
           <p>
             pages are statically generated so they stay fast on modest hosting.
             if you want to collaborate, start from the project detail page for
-            contribution expectations and license terms.
+            contribution expectations and license terms
           </p>
           <p>
             resume, career snapshot, and broader work live on{" "}
