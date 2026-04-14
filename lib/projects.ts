@@ -60,7 +60,7 @@ const projects: Project[] = [
     slug: "blog",
     name: "my blog",
     tagline: "CRUD Blog in Angular 15 and NestJs with MongoDB and Google Authentication",
-    description: "it is a simple blog built in angular 15 and nestjs with mongodb and google authentication. it uses proper database indexing to handle a large data set of articles efficiently.",
+    description: "it is a simple blog built in angular 15 and nestjs with mongodb database and google authentication. it uses proper database indexing to handle a large data set of articles efficiently.",
     motivation: "built as a boilerplate for my own projects. it can help others to build a similar blog in a short time.",
     features: [
       "google authentication",
