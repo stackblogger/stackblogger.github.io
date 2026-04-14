@@ -5,32 +5,78 @@ export type Project = {
   description: string;
   motivation: string;
   features: string[];
-  designNotes: string;
   stack: string[];
   quickstart: string;
   links: { label: string; href: string }[];
   license: string;
-  contributing: string;
+  contribute: string;
   status: "active" | "maintenance" | "experimental";
 };
 
 const projects: Project[] = [
   {
+    slug: "bitnetjs",
+    name: "bitnet.js",
+    tagline: "A node.js implementation of the microsoft bitnet.cpp inference framework",
+    description: "it is the Node.js implementation of Microsoft's bitnet.cpp inference framework. This repository facilitates real-time interaction between a Node.js frontend and the bitnet 1-bit LLM model using Socket.IO. The app allows users to send queries to the BitNet LLM (Large Language Model) and receive responses line by line via a web interface.",
+    motivation: "the actual inference framework by microsoft does not provide a web interface to interact with the model. so i decided to build my own implementation using Node.js and Socket.IO.",
+    features: [
+      "A simple frontend built with HTML and JavaScript to interact with the BitNet model",
+      "Uses Socket.IO for bi-directional communication between the Node.js app and the Python-based BitNet model",
+      "Both the Node.js app and BitNet model run in separate Docker containers managed by docker compose"
+    ],
+    stack: ["html", "python", "dockerfile", "javascript"],
+    quickstart: "docker compose up --build -d",
+    links: [
+      { label: "source", href: "https://github.com/stackblogger/bitnet.js" }
+    ],
+    license: "mit",
+    contribute:
+      "raise an issue or submit a pull request if you find any bug or want to add a feature. i will get some time to review and fix it or if its a pull request then i will merge it.",
+    status: "active",
+  },
+  {
     slug: "triggy",
     name: "triggy",
     tagline: "triggy is a webpack plugin to lazy load the static contents on user interaction",
-    description: "Triggy is a webpack plugin that loads the javascript and css files when user interaction happens like mouse move, scroll etc. It improves web page performance and boosts core web vitals.",
-    motivation: "it was built to improve the performance of my own websites. later on i decided to share it with the community.",
-    features: ["declarative steps with namespaced cache keys", "parallel fan-out where the graph allows it", "human log format with timings per step", "watch mode that only re-runs affected steps"],
-    designNotes: "the core is a directed acyclic graph executor with content-addressed caches. steps are pure functions over the filesystem; side effects are isolated so ci and local runs stay aligned.",
+    description: "it loads the javascript and css files when user interaction happens like mouse move, scroll etc. It improves web page performance and boosts core web vitals.",
+    motivation: "it was built to improve the performance of my own websites. later on i decided to share it with the world.",
+    features: [
+      "automatically converts all the src attributes to data-src and href to data-href",
+      "loads static resources only on user interaction",
+      "very easy integration to webpack builder"
+    ],
     stack: ["webpack", "typescript"],
     quickstart: "npm install -D triggy",
     links: [
       { label: "source", href: "https://github.com/stackblogger/triggy" }
     ],
     license: "mit",
-    contributing:
-      "issues and small prs welcome. run the test suite before opening a pr; keep changes focused and include a note in the pr body if behavior shifts for existing recipes.",
+    contribute:
+      "raise an issue or submit a pull request if you find any bug or want to add a feature. i will review the changes and publish them to the npm registry.",
+    status: "active",
+  },
+  {
+    slug: "blog",
+    name: "my blog",
+    tagline: "CRUD Blog in Angular 15 and NestJs with MongoDB and Google Authentication",
+    description: "it is a simple blog built in angular 15 and nestjs with mongodb and google authentication. it uses proper database indexing to handle a large data set of articles efficiently.",
+    motivation: "built as a boilerplate for my own projects. it can help others to build a similar blog in a short time.",
+    features: [
+      "google authentication",
+      "infinite scroll",
+      "95% test coverage",
+      "tested efficiency through locust stress testing",
+      "easily handles more than 1 million articles"
+    ],
+    stack: ["typescript", "angular", "nestjs", "mongodb", "google authentication"],
+    quickstart: "git clone https://github.com/stackblogger/my-blog.git",
+    links: [
+      { label: "source", href: "https://github.com/stackblogger/my-blog" }
+    ],
+    license: "mit",
+    contribute:
+      "raise an issue or submit a pull request if you find any bug or want to add a feature.",
     status: "active",
   }
 ];

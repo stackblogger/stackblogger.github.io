@@ -108,18 +108,6 @@ export default async function ProjectPage({ params }: Props) {
           </ul>
         </section>
 
-        <section aria-labelledby="design">
-          <h2
-            id="design"
-            className="text-sm font-semibold tracking-wider text-muted"
-          >
-            design notes
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-foreground/90">
-            {project.designNotes}
-          </p>
-        </section>
-
         <section aria-labelledby="quickstart">
           <h2
             id="quickstart"
@@ -186,15 +174,15 @@ export default async function ProjectPage({ params }: Props) {
           </p>
         </section>
 
-        <section aria-labelledby="contributing">
+        <section aria-labelledby="contribute">
           <h2
-            id="contributing"
+            id="contribute"
             className="text-sm font-semibold tracking-wider text-muted"
           >
-            contributing
+            contribute
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/90">
-            {project.contributing}
+            {project.contribute}
           </p>
         </section>
       </div>

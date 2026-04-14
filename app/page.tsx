@@ -11,20 +11,20 @@ export default function HomePage() {
           id="hero-heading"
           className="text-sm font-medium tracking-wide text-accent"
         >
-          helping hand
+          for developers
         </p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           opensource projects by stackblogger
         </h1>
         <p className="mt-5 max-w-4xl text-base leading-relaxed text-muted">
           here you will find the opensource projects that make the developers life easier.
-          if you find any of them useful, please spread the word.
+          if you find any of them useful, dont forget to star the repository.
         </p>
         <ul className="mt-8 grid gap-3 sm:grid-cols-3">
           {[
             "lightweight",
             "easy to use",
-            "open to contribution",
+            "open for contribution",
           ].map((item) => (
             <li
               key={item}
@@ -50,7 +50,7 @@ export default function HomePage() {
               projects
             </h2>
             <p className="mt-2 text-lg font-medium text-foreground">
-              open a project to see the complete detail about it
+              click on a project to see the complete detail about it
             </p>
           </div>
         </div>
@@ -108,17 +108,10 @@ export default function HomePage() {
         </h2>
         <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
           <p>
-            opensource is the home for stackblogger experiments that graduated
-            from notes to repos: clis, libraries, and tiny services meant to
-            be forked or vendored without ceremony.
+            here at opensource, i do experiments, build the libraries and share them with the world. mostly the libraries are built in javascript and typescript.
           </p>
           <p>
-            pages are statically generated so they stay fast on modest hosting.
-            if you want to collaborate, start from the project detail page for
-            contribution expectations and license terms.
-          </p>
-          <p>
-            resume, career snapshot, and broader work live on{" "}
+            explore more about me here{" "}
             <a
               href="https://me.stackblogger.com/"
               className="text-accent underline-offset-4 hover:underline"
